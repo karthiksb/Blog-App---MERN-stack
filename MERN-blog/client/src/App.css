@@ -1,0 +1,117 @@
+.App {
+  height: 1000vh;
+  background-color: #111927;
+  background-image: radial-gradient(
+      at 47% 33%,
+      hsl(343.77, 95%, 52%) 0,
+      transparent 59%
+    ),
+    radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%);
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(202, 202, 202);
+  align-items: center;
+  height: 70px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: #fff;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  color: #fff;
+}
+.links {
+  color: #fff;
+  margin-left: 10px;
+  list-style: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.create {
+  width: fit-content;
+  height: fit-content;
+  backdrop-filter: blur(56px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 40px;
+}
+.create h1 {
+  margin-bottom: 25px;
+}
+label {
+  font-size: 14px;
+
+  margin-top: 20px;
+}
+.create input {
+  width: 570px;
+  height: 45px;
+  margin: 10px 0;
+  outline: none;
+  padding-left: 30px;
+  border-radius: 5px;
+  border-style: none;
+}
+.create textarea {
+  margin-top: 10px;
+  width: 580px;
+  height: 300px;
+  padding: 10px;
+  resize: none;
+}
+.create button {
+  margin-top: 30px;
+  width: 600px;
+  height: 50px;
+  color: #fff;
+  background-color: #a01546;
+  border-radius: 5px;
+  border-style: none;
+  transition: transform 0.2s; /* Animation */
+}
+.create button:hover {
+  transform: scale(1.05);
+}
+.postcontainer {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+
+  height: 60vh;
+  display: flex;
+}
+
+.postcard {
+  margin-top: 10px;
+  color: #fff;
+  width: 800px;
+  padding: 20px;
+  height: auto;
+  backdrop-filter: blur(56px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.postcard .author {
+  text-align: right;
+  font-size: 18px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
